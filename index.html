@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProyectoVentaDeRopa</title>
+    <!-- Enlace para cargar Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="loader.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="checkbox" checked />
+
+    <header class="encabezado">
+      <!-- comienzo del astronauta -->
+      <!--   <div class="logo-astronauta-container">
+        <div class="box-of-star1">
+          <div class="star star-position1"></div>
+          <div class="star star-position2"></div>
+          <div class="star star-position3"></div>
+          <div class="star star-position4"></div>
+          <div class="star star-position5"></div>
+          <div class="star star-position6"></div>
+          <div class="star star-position7"></div>
+        </div>
+        <div class="box-of-star2">
+          <div class="star star-position1"></div>
+          <div class="star star-position2"></div>
+          <div class="star star-position3"></div>
+          <div class="star star-position4"></div>
+          <div class="star star-position5"></div>
+          <div class="star star-position6"></div>
+          <div class="star star-position7"></div>
+        </div>
+        <div class="box-of-star3">
+          <div class="star star-position1"></div>
+          <div class="star star-position2"></div>
+          <div class="star star-position3"></div>
+          <div class="star star-position4"></div>
+          <div class="star star-position5"></div>
+          <div class="star star-position6"></div>
+          <div class="star star-position7"></div>
+        </div>
+        <div class="box-of-star4">
+          <div class="star star-position1"></div>
+          <div class="star star-position2"></div>
+          <div class="star star-position3"></div>
+          <div class="star star-position4"></div>
+          <div class="star star-position5"></div>
+          <div class="star star-position6"></div>
+          <div class="star star-position7"></div>
+        </div>
+        <div data-js="astro" class="astronaut">
+          <div class="head"></div>
+          <div class="arm arm-left"></div>
+          <div class="arm arm-right"></div>
+          <div class="body">
+            <div class="panel"></div>
+          </div>
+          <div class="leg leg-left"></div>
+          <div class="leg leg-right"></div>
+          <div class="schoolbag"></div>
+        </div>
+      </div> -->
+      <!--fin del astronauta-->
+      <!--    <label for="activar-sidebar" class="boton-abrir-sidebar">
+        <i class="bi bi-list"></i>
+      </label> -->
+      <label for="checkbox" class="toggle">
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+      </label>
+
+      <div class="logo">
+        <h1>nombre de la marca</h1>
+        <p>moda unisex para todos</p>
+      </div>
+
+      <nav class="menu">
+        <a href="#">Inicio</a>
+        <a href="#">productos</a>
+        <a href="#">catalogo</a>
+        <a href="#">nosotros</a>
+        <a href="#">contacto</a>
+      </nav>
+      <div class="iconos">
+        <i class="bi bi-bag"></i>
+        <i class="bi bi-search"></i>
+        <i class="bi bi-person-fill"></i>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <!-- aqui es la barra lateral -->
+
+        <h3>Menú</h3>
+        <a href="#">
+          <i class="bi bi-house"></i>
+          <span>Inicio</span>
+        </a>
+        <a href="#">
+          <i class="bi bi-grid"></i>
+          <span>Categorias</span>
+        </a>
+        <a href="#">
+          <i class="bi bi-bag"></i>
+          <span>Productos</span>
+        </a>
+        <a href="#">
+          <i class="bi bi-stars"></i>
+          <span>Ofertas</span>
+        </a>
+        <a href="#">
+          <i class="bi bi-whatsapp"></i>
+          <span>Whatsapp</span>
+        </a>
+      </aside>
+
+      <main class="contenido-principal">
+        <!-- aqui haremos la portada y todas las secciones -->
+        <section class="portada">
+          <div class="portada-texto">
+            <h2>ESTILO QUE NOS REPRESENTA</h2>
+            <p>ropa unisex que nos representa</p>
+
+            <button class="boton-uiverse">
+              Ver coleccion
+              <div class="arrow-wrapper">
+                <div class="arrow"></div>
+              </div>
+            </button>
+          </div>
+
+          <div class="portada-imagen">
+            <img src="img/foto-principal.png" alt="Imagen Principal">
+          </div>
+        </section>
+
+        <section class="categorias">
+          <div class="titulo-seccion">
+            <h2>Categorias</h2>
+            <p>Explora nuestras principales prendas</p>
+          </div>
+          <div class="contenedor-categoria">
+            <article class="tarjeta-categoria">
+              <i class="bi bi-person-standing">
+                <h3>HOMBRE</h3>
+                <p>Estilo comodo y moderno</p>
+              </i>
+            </article>
+            <article class="tarjeta-categoria">
+              <i class="bi bi-person-standing-dress"></i>
+              <h3>MUJER</h3>
+              <p>Diseños para toda ocasión</p>
+            </article>
+            <article class="tarjeta-categoria">
+              <i class="bi bi-emoji-smile"></i>
+              <h3>NIÑOS</h3>
+              <p>Prendas Comodas y Juveniles</p>
+            </article>
+          </div>
+        </section>
+
+        
+        <section class="productos"> 
+            <div class="titulo-seccion">
+              <h2>Productos Descatados</h2>
+              <p>Prendas Modernas para todos los Estilos</p>
+            </div>
+            <div class="contenedor-productos">
+              <article class="tarjeta producto">
+                <div class="imagen-producto">
+                  <p>imagen</p>
+                </div>
+                <div class="info-producto">
+                  <h3>Polo Oversize</h3>
+                   <p>algodon 100%</p>
+                   <span>S/59.90</span> 
+                   <button>Ver Producto</button>
+                </div>
+              </article>
+              <article class="tarjeta producto">
+                  <div class="imagen-producto">
+                    <p>imagen</p>
+                  </div>
+                  <div class="info-producto">
+                     <h3>jean unisex</h3> 
+                      <p>Denim Premiun</p>
+                        <span>S/129.90</span>
+                         <button>Ver producto</button> 
+                  </div>  
+              </article>
+
+                   <article class="tarjeta-producto">
+                    <div class="imagen-producto">
+                        <p>Imagen</p>
+                    </div>
+
+                    <div class="info-producto">
+                        <h3>Hoodie Basic</h3>
+                        <p>Cómodo y abrigador</p>
+                        <span>S/ 89.90</span>
+                        <button>Ver producto</button>
+                    </div>
+                  </article>
+
+
+            </div>
+
+        </section>
+
+
+      </main>
+    </div>
+  </body>
+</html>

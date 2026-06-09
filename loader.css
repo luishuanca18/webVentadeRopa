@@ -1,0 +1,440 @@
+/* From Uiverse.io by JkHuger - Optimizado para tamaño Logo */
+
+/* ==========================================================================
+   1. CONTENEDOR PRINCIPAL DEL LOGO
+   ========================================================================== */
+.logo-astronauta-container {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: #0b1d3a;  /* Fondo azul oscuro espacial */
+  border-radius: 12px;
+  overflow: hidden;     /* Recorta todo lo que se salga de los 70px */
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================================================
+   2. EL ASTRONAUTA (Escalado y centrado obligatoriamente)
+   ========================================================================== */
+.astronaut {
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  z-index: 11;
+  top: calc(50% - 150px);   /* Espacios corregidos */
+  left: calc(50% - 125px);  /* Espacios corregidos */
+  transform: scale(0.18);   /* Reducido a miniatura para encajar en 70px */
+  animation: astronaut 5s linear infinite;
+}
+
+/* ==========================================================================
+   3. CONFIGURACIÓN Y ANIMACIÓN DE LAS ESTRELLAS
+   ========================================================================== */
+.box-of-star1,
+.box-of-star2,
+.box-of-star3,
+.box-of-star4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+
+@keyframes snow {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(70px); /* Caída limitada a la altura del logo */
+  }
+}
+
+.box-of-star1 { animation: snow 5s linear infinite; }
+.box-of-star2 { animation: snow 5s -1.64s linear infinite; }
+.box-of-star3 { animation: snow 5s -2.30s linear infinite; }
+.box-of-star4 { animation: snow 5s -3.30s linear infinite; }
+
+.star {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #FFF;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+/* Reducido el tamaño de los destellos extras para que entren en el logo */
+.star:before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #FFF;
+  position: absolute;
+  z-index: 10;
+  top: 15px;
+  left: 10px;
+  opacity: .7;
+}
+
+.star:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #FFF;
+  position: absolute;
+  z-index: 10;
+  top: -10px;
+  left: -15px;
+  opacity: .9;
+}
+
+/* POSICIONES CORREGIDAS: Agrupadas dentro del rango de 0px a 70px */
+.star-position1 { top: 10px; left: 10px; }
+.star-position2 { top: 25px; left: 45px; }
+.star-position3 { top: 45px; left: 20px; }
+.star-position4 { top: 55px; left: 55px; }
+.star-position5 { top: 15px; left: 35px; }
+.star-position6 { top: 50px; left: 12px; }
+.star-position7 { top: 30px; left: 58px; }
+
+/* ==========================================================================
+   4. DETALLES DEL CUERPO DEL ASTRONAUTA (Estilos originales de Uiverse)
+   ========================================================================== */
+@keyframes astronaut {
+  0% { transform: rotate(0deg) scale(0.18); }
+  100% { transform: rotate(360deg) scale(0.18); }
+}
+
+.schoolbag {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  z-index: 1;
+  top: calc(50% - 75px);
+  left: calc(50% - 50px);
+  background-color: #94b7ca;
+  border-radius: 50px 50px 0 0 / 30px 30px 0 0;
+}
+
+.head {
+  width: 97px;
+  height: 80px;
+  position: absolute;
+  z-index: 3;
+  background: -webkit-linear-gradient(left, #e3e8eb 0%, #e3e8eb 50%, #fbfdfa 50%, #fbfdfa 100%);
+  border-radius: 50%;
+  top: 34px;
+  left: calc(50% - 47.5px);
+}
+
+.head:after {
+  content: "";
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 30px);
+  background: -webkit-linear-gradient(top, #15aece 0%, #15aece 50%, #0391bf 50%, #0391bf 100%);
+  border-radius: 15px;
+}
+
+.head:before {
+  content: "";
+  width: 12px;
+  height: 25px;
+  position: absolute;
+  top: calc(50% - 12.5px);
+  left: -4px;
+  background-color: #618095;
+  border-radius: 5px;
+  box-shadow: 92px 0px 0px #618095;
+}
+
+.body {
+  width: 85px;
+  height: 100px;
+  position: absolute;
+  z-index: 2;
+  background-color: #fffbff;
+  border-radius: 40px / 20px;
+  top: 105px;
+  left: calc(50% - 41px);
+  background: -webkit-linear-gradient(left, #e3e8eb 0%, #e3e8eb 50%, #fbfdfa 50%, #fbfdfa 100%);
+}
+
+.panel {
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 30px);
+  background-color: #b7cceb;
+}
+
+.panel:before {
+  content: "";
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  top: 9px;
+  left: 7px;
+  background-color: #fbfdfa;
+  box-shadow: 0px 9px 0px #fbfdfa, 0px 18px 0px #fbfdfa;
+}
+
+.panel:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 9px;
+  right: 7px;
+  background-color: #fbfdfa;
+  border-radius: 50%;
+  box-shadow: 0px 14px 0px 2px #fbfdfa;
+}
+
+.arm {
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  top: 121px;
+  z-index: 2;
+}
+
+.arm-left {
+  left: 30px;
+  background-color: #e3e8eb;
+  border-radius: 0 0 0 39px;
+}
+
+.arm-right {
+  right: 30px;
+  background-color: #fbfdfa;
+  border-radius: 0 0 39px 0;
+}
+
+.arm-left:before,
+.arm-right:before {
+  content: "";
+  width: 30px;
+  height: 70px;
+  position: absolute;
+  top: -40px;
+}
+
+.arm-left:before {
+  border-radius: 50px 50px 0px 120px / 50px 50px 0 110px;
+  left: 0;
+  background-color: #e3e8eb;
+}
+
+.arm-right:before {
+  border-radius: 50px 50px 120px 0 / 50px 50px 110px 0;
+  right: 0;
+  background-color: #fbfdfa;
+}
+
+.arm-left:after,
+.arm-right:after {
+  content: "";
+  width: 30px;
+  height: 10px;
+  position: absolute;
+  top: -24px;
+}
+
+.arm-left:after {
+  background-color: #6e91a4;
+  left: 0;
+}
+
+.arm-right:after {
+  right: 0;
+  background-color: #b6d2e0;
+}
+
+.leg {
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  z-index: 2;
+  bottom: 70px;
+}
+
+.leg-left {
+  left: 76px;
+  background-color: #e3e8eb;
+  transform: rotate(20deg);
+}
+
+.leg-right {
+  right: 73px;
+  background-color: #fbfdfa;
+  transform: rotate(-20deg);
+}
+
+.leg-left:before,
+.leg-right:before {
+  content: "";
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  bottom: -26px;
+}
+
+.leg-left:before {
+  left: -20px;
+  background-color: #e3e8eb;
+  border-radius: 30px 0 0 0;
+  border-bottom: 10px solid #6d96ac;
+}
+
+.leg-right:before {
+  right: -20px;
+  background-color: #fbfdfa;
+  border-radius: 0 30px 0 0;
+  border-bottom: 10px solid #b0cfe4;
+}
+
+/* style de boton */
+
+/* From Uiverse.io by satyamchaudharydev */ 
+.boton-uiverse {
+  --primary-color: #7c3aed;
+  --secondary-color: #fff;
+  --hover-color: #5b21b6;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+.boton-uiverse .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-uiverse .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.boton-uiverse .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.boton-uiverse:hover {
+  background-color: var(--hover-color);
+}
+
+.boton-uiverse:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.boton-uiverse:hover .arrow:before {
+  right: 0;
+}
+/* icono para abrir sidebar //////////////////////////////////////*/
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .5s;
+  margin-right: 20px;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: #8b5cf6;
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: .8s;
+}
+
+#bar1,
+#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked ~ .encabezado .toggle .bars {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+#checkbox:checked ~ .encabezado .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+#checkbox:checked ~ .encabezado .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked ~ .encabezado .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked ~ .encabezado .toggle {
+  transition-duration: .5s;
+  transform: rotate(180deg);
+}
+
+#checkbox:not(:checked) ~ .layout .sidebar{
+  width: 0;
+  padding-left: 0;
+  padding-right: 0;
+}

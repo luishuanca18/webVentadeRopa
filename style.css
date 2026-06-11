@@ -52,7 +52,11 @@ body {
 }
 
 .menu a:hover {
-  color: #5a5555;
+  /* color: #5a5555; */
+  background-color: #7c3aed;
+  border-radius: 15px;
+  
+  padding: 8px 10px;
 }
 
 .iconos {

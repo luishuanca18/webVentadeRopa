@@ -55,7 +55,6 @@ body {
   /* color: #5a5555; */
   background-color: #7c3aed;
   border-radius: 15px;
-  
   padding: 8px 10px;
 }
 
@@ -72,7 +71,11 @@ body {
 }
 
 .iconos i:hover {
-  color: #5a5555;
+  /* color: #5a5555; */
+  color: #7c3aed
+/*    background-color: #7c3aed;
+  border-radius: 15px;
+  padding: 8px 10px; */
 }
 
 .portada {
@@ -285,6 +288,18 @@ background-color: #dddddd;
   font-size: 24px;
   font-weight: bold;
   color: var(--color-acento);
+}
+.nosotros{
+  background-color: blue;
+  padding: 70px 90px;
+  display: flex;
+  align-items: center;
+  gap:60px;
+
+
+}
+.nosotros-imagen{
+
 
 
 }

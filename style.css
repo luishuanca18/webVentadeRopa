@@ -354,6 +354,70 @@ background-color: #dddddd;
 .footer-contenido{
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
+  gap:40px;
+  margin-bottom: 35px;
+
+}
+.footer-marca h2{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.footer-marca p{
+
+font-size: 16px;
+color: #cccccc;
+
 
 }
 
+.footer-link h3,
+.footer-redes h3{
+
+  font-size: 20px;
+  margin-bottom: 15px,
+
+
+}
+.footer-links{
+  display: flex;
+  flex-direction:column;
+
+}
+
+.footer-links a{
+text-decoration: none;
+color: #cccccc;
+font-size: 16px;
+margin-bottom: 10px;
+}
+.footer-links a:hover {
+    color: var(--color-acento);
+}
+.redes-iconos {
+    display: flex;
+    gap: 18px;
+}
+
+.redes-iconos i{
+    font-size: 16px;
+    color: var(--color-blanco);
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+.redes-iconos i:hover {
+    color: var(--color-acento);
+    transform: translateY(-5px);
+}
+
+.footer-copy {
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-copy p {
+    color: #cccccc;
+    font-size: 14px;
+}

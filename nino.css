@@ -1,0 +1,16 @@
+.meme{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.meme p{
+
+    font-size: 200px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+
+}

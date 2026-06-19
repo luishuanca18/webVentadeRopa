@@ -25,7 +25,7 @@ body {
   color: white;
 }
 .menu {
-  margin-left: auto
+  margin-left: auto;
   }
 
 .menu a {
@@ -126,7 +126,7 @@ input{
 
 .titulo h2 {
   font-size: 38px;
-  color: var(--color-texto);
+  color: #111111;
   margin-bottom: 10px;
 }
 
@@ -137,22 +137,126 @@ input{
 .cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .card{
+    width: 290px;
     background: #fff;
-    border: 1px solid #155e59;
+    border: 1px solid #5B21B6;
     border-radius: 12px;
     overflow: hidden;
 }
 
+.card img{
+  width: 290px;
+  display: block;
+}
+
 .card_body{
     padding: .9rem;
+}
+.card_body p{
+    padding: .9rem;
+}
+
+.tag{
+    font-size: 0.75rem;
+    font-weight: bold;
+    color:#5B21B6;
+    background-color: #d9f2ee;
+    padding: .15rem .5rem;
+    border-radius: 999px;
 }
 
 .barra{
     display:flex;
     gap:40px;
     align-items:flex-start;
+}
+.btn{
+    display: inline-block;/*inline y block. Estar en la misma linea*/
+    padding: .7rem 1rem;
+    border-radius: 12px;
+    border:  2px solid #5B21B6;
+    color: #5B21B6;
+    background: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: #5B21B6;
+    color: #fff;
+    text-decoration: underline;
+}
+.footer {
+  background-color: #111111;
+  color: #fff;
+  padding: 50px 90px 20px;
+}
+
+.footer-contenido {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 35px;
+}
+.footer-marca h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.footer-marca p {
+  font-size: 16px;
+  color: #cccccc;
+}
+
+.footer-links h3,
+.footer-redes h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #cccccc;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.footer-links a:hover {
+  color: #5B21B6;
+}
+.redes-iconos {
+  display: flex;
+  gap: 18px;
+}
+
+.redes-iconos i {
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.redes-iconos i:hover {
+  color: #5B21B6;
+  transform: translateY(-5px);
+}
+
+.footer-copy {
+  border-top: 1px solid #333333;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-copy p {
+  color: #cccccc;
+  font-size: 14px;
 }

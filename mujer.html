@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MODA MUJER</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="mujerdiseño.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- <input type="checkbox" id="checkbox" checked /> -->
-
   <header class="encabezado">
     <label for="checkbox" class="toggle">
       <div class="bars" id="bar1"></div>
@@ -20,8 +22,9 @@
     </label>
 
     <div class="logo">
-      <h1>TECHFASHION</h1>
-      <p>Moda para todos</p>
+      <img src="img/logo.png" alt="TECHFASHION">
+      <!--   <h1>TECHFASHION</h1>
+        <p>moda unisex para todos</p> -->
     </div>
 
     <nav class="menu">
@@ -37,28 +40,50 @@
       <i class="bi bi-person-fill"></i>
     </div>
   </header>
-  <div class="carrusel">
 
-    <input type="radio" name="slide" id="img1" checked>
-    <input type="radio" name="slide" id="img2">
-    <input type="radio" name="slide" id="img3">
-    <input type="radio" name="slide" id="img4">
-
-    <div class="contenedor">
-      <div class="imagenes">
-        <img src="img/banner1.jpg" alt="">
-        <img src="img/banner2.jpg" alt="">
-        <img src="img/banner3.jpg" alt="">
-        <img src="img/banner4.jpg" alt="">
-      </div>
-
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
-
-    <div class="botones">
-      <label for="img1">1</label>
-      <label for="img2">2</label>
-      <label for="img3">3</label>
-      <label for="img4">4</label>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/banner1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/banner2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/banner3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group" role="group" aria-label="First group">
+      <button type="button" class="btn btn-outline-secondary">1</button>
+      <button type="button" class="btn btn-outline-secondary">2</button>
+      <button type="button" class="btn btn-outline-secondary">3</button>
+      <button type="button" class="btn btn-outline-secondary">4</button>
+    </div>
+    <div class="input-group">
+      <div class="input-group-text" id="btnGroupAddon2">Buscador</div>
+      <input type="text" class="form-control" placeholder="Tu prenda favorita"
+        aria-label="Tu prenda favorita" aria-describedby="btnGroupAddon2">
     </div>
   </div>
 
@@ -74,6 +99,7 @@
         <div class="card_body">
           <span class="tag">Temporada Invierno</span>
           <p>Chompa de carnero sintético</p>
+          <p class="precio">S/. 50.00</p>
           <a class="btn" href="#">Comprar</a>
         </div>
       </article>
@@ -82,6 +108,7 @@
         <div class="card_body">
           <span class="tag">Temporada Invierno</span>
           <p>Chompa tejida en punto trenzado con botones</p>
+          <p class="precio">S/. 67.00</p>
           <a class="btn" href="#">Comprar</a>
         </div>
       </article>
@@ -90,6 +117,7 @@
         <div class="card_body">
           <span class="tag">Temporada Invierno</span>
           <p>Casaca de lona con cuello de corduroy</p>
+          <p class="precio">S/. 80.00</p>
           <a class="btn" href="#">Comprar</a>
         </div>
       </article>
@@ -98,6 +126,7 @@
         <div class="card_body">
           <span class="tag">Temporada Invierno</span>
           <p>Casca Puffer con relleno algodón</p>
+          <p class="precio">S/. 120.00</p>
           <a class="btn" href="#">Comprar</a>
         </div>
       </article>
@@ -106,6 +135,7 @@
         <div class="card_body">
           <span class="tag">Temporada Invierno</span>
           <p>Pantalón Negro de lana</p>
+          <p class="precio">S/. 90.00</p>
           <a class="btn" href="#">Comprar</a>
         </div>
       </article>
@@ -114,6 +144,7 @@
         <div class="card_body">
           <span class="tag">Temporada Invierno</span>
           <p>Pantalón Blanco de lana</p>
+          <p class="precio">S/. 75.00</p>
           <a class="btn" href="#">Comprar</a>
         </div>
       </article>
@@ -122,6 +153,7 @@
         <div class="card_body">
           <span class="tag">Temporada Invierno</span>
           <p>Joggers amplio tela Verú</p>
+          <p class="precio">S/. 63.00</p>
           <a class="btn" href="#">Comprar</a>
         </div>
       </article>
@@ -130,13 +162,33 @@
         <div class="card_body">
           <span class="tag">Temporada Invierno</span>
           <p>Pantalón waffer con cordón ajustable</p>
+          <p class="precio">S/. 85.00</p>
+          <a class="btn" href="#">Comprar</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/bota.jpg" alt="Botas Altas">
+        <div class="card_body">
+          <span class="tag">Temporada Invierno</span>
+          <p>Botas Altas Casuales</p>
+          <p class="precio">S/. 250.00</p>
+          <a class="btn" href="#">Comprar</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/bota2.jpg" alt="Bota Puff">
+        <div class="card_body">
+          <span class="tag">Temporada Invierno</span>
+          <p>Botas Mujer Estilo Puff</p>
+          <p class="precio">S/. 125.00</p>
           <a class="btn" href="#">Comprar</a>
         </div>
       </article>
     </div>
   </section>
-  <footer class="footer">
+  <br>
 
+  <footer class="footer">
     <div class="footer-contenido">
       <div class="footer-marca">
         <h2>TECHFASHION</h2>

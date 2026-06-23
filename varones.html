@@ -12,28 +12,35 @@
 
 <body>
 
-<header>
+<input type="checkbox" id="checkbox" checked />
+
+<header class="encabezado">
+
+    <label for="checkbox" class="toggle">
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+    </label>
+
     <div class="logo">
-        <h2>TECHFASHION</h2>
-        <p>Tienda de ropa unisex</p>
+        <img src="img/logo.png" alt="TECHFASHION">
     </div>
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Catálogo</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Catálogo</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contacto</a>
     </nav>
 
     <div class="iconos">
-        <a href="#"><i class="bi bi-search"></i></a>
-        <a href="#"><i class="bi bi-person-fill"></i></a>
-        <a href="#"><i class="bi bi-bag"></i></a>
+        <i class="bi bi-bag"></i>
+        <i class="bi bi-search"></i>
+        <i class="bi bi-person-fill"></i>
     </div>
-</header>
+
+</header>   
 
 <section class="hero">
     <div class="hero-content">
@@ -56,9 +63,9 @@
         </div>
 
         <div class="producto">
-            <img src="img/polo-manga-larga.png" alt="Polo manga larga">
-            <h3>Polo manga larga</h3>
-            <p>S/. 39.90</p>
+            <img src="img/PantalonBaggie.png" alt="Pantalón Baggie">
+            <h3>Pantalón Baggie</h3>
+            <p>S/. 59.90</p>
             <button>Ver producto</button>
         </div>
 
@@ -70,18 +77,101 @@
         </div>
 
         <div class="producto">
+            <img src="img/DrillNegro.png" alt="Drill negro">
+            <h3>Drill negro</h3>
+            <p>S/. 69.90</p>
+            <button>Ver producto</button>
+        </div>
+
+               <div class="producto">
             <img src="img/polo-camisero.png" alt="Polo camisero">
             <h3>Polo camisero</h3>
             <p>S/. 49.90</p>
             <button>Ver producto</button>
         </div>
 
+        <div class="producto">
+            <img src="img/polo-manga-larga.png" alt="Polo manga larga">
+            <h3>Polo manga larga</h3>
+            <p>S/. 39.90</p>
+            <button>Ver producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="img/PoloVerdeCuelloRedondo.png" alt="Polo verde cuello redondo">
+            <h3>Polo verde cuello redondo</h3>
+            <p>S/. 45.90</p>
+            <button>Ver producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="img/PolobBasicoCuelloVBlanco.webp" alt="Polo básico cuello V blanco">
+            <h3>Polo básico cuello V blanco</h3>
+            <p>S/. 42.90</p>
+            <button>Ver producto</button>
+        </div>
+        <div class="producto">
+            <img src="img/PoleraOversize.png" alt="Polera oversize">
+            <h3>Polera oversize</h3>
+            <p>S/. 59.90</p>
+            <button>Ver producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="img/poleraOversizeVerde.png" alt="Polera oversize verde">
+            <h3>Polera oversize verde</h3>
+            <p>S/. 59.90</p>
+            <button>Ver producto</button> 
+        </div>
+        <div class="producto">
+            <img src="img/PoleraRoja.webp" alt="Polera roja">
+            <h3>Polera roja</h3>
+            <p>S/. 55.90</p>
+            <button>Ver producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="img/PoleraMarron.webp" alt="Polera marrón">
+            <h3>Polera marrón</h3>
+            <p>S/. 52.90</p>
+            <button>Ver producto</button>
+        </div>
+
     </div>
 </section>
 
-<footer>
-    <p>© 2024 TECHFASHION. Todos los derechos reservados.</p>
-</footer>
+<footer class="footer">
 
-</body>
+          <div class="footer-contenido">
+            <div class="footer-marca">
+              <h2>TECHFASHION</h2>
+              <p>Moda unisex para todos los estilos.</p>
+            </div>
+
+            <div class="footer-links">
+              <h3>Navegación</h3>
+              <a href="#">Inicio</a>
+              <a href="#">Productos</a>
+              <a href="#">Catálogo</a>
+              <a href="#">Nosotros</a>
+            </div>
+
+            <div class="footer-redes">
+              <h3>Síguenos</h3>
+
+              <div class="redes-iconos">
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-tiktok"></i>
+                  <i class="bi bi-whatsapp"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-copy">
+             <p>© 2024 TECHFASHION. Todos los derechos reservados.</p>
+          </div>
+
+        </footer>
+  </body>
 </html>

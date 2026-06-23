@@ -1,16 +1,147 @@
-.meme{
+*{
+
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: #111111;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding:  0 70px;
+    color: white;
+
+}
+.menus{
+    display: flex;
+    gap: 30px;
+    justify-content: center;  
+    margin-left: auto   ; 
+}
+.menus a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px; 
+    margin:0 18px;
+    
+       
+}
+
+
+.iconos{
 
     display: flex;
-    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-end;
+
+}
+.iconos i{
+    
+
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transition 0.3s ease,color 0.3s ease;    
+}
+.iconos i:hover{
+   
+    color: #7c3aed;    
+}
+
+.logo{
+    width: 420px;
+    display: flex;
     align-items: center;
 
 }
+.logo img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 
-.meme p{
+.banner-hero{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background: white; 
+    justify-content: space-between;
+    margin: 30px;
+    padding: 40px 60px;
+    overflow: hidden;
+    
+}
 
-    font-size: 200px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+.banner-texto{
+
+    flex: 1.2;
+    padding: 30px;
+}
+
+.banner-imagen{
+
+    flex: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 20px;
+    
+}
+.banner-imagen img{
+    max-width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
 
 }
+.categoria-tag{
+
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.banner-texto h1{
+    font-size: 38px;
+    color: #111111;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.banner-texto p {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.sidebar-filtros{
+    background-color: #ffffff;
+    color: #111111;
+    border-right: 1px solid #dddddd;
+    padding: 40px 25px;
+    box-shadow: none;
+}
+
+.sidebar-filtros h3{
+
+    font-size: 10px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 10px;
+}
+
+

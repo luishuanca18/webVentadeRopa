@@ -1,3 +1,4 @@
 {
-  "commentTranslate.targetLanguage": "es"
+  "commentTranslate.targetLanguage": "es",
+  "editor.formatOnSave": false
 }

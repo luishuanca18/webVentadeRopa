@@ -41,13 +41,82 @@
     <div class="layout">
       <aside class="sidebar sidebar-filtros">
         <h3>filtros</h3>
+        <div class="grupo-filtro">
+          <h4>Categorias</h4>
+          <label class="opcion-filtro">
+            <input type="checkbox" name="Categoria" value="polos" />Polos
+          </label>
+          <label class="opcion-filtro">
+            <input type="checkbox" name="Categoria" value="polos" />Poleras
+          </label>
+          <label class="opcion-filtro">
+            <input type="checkbox" name="Categoria" value="polos" />Pantalones
+          </label>
+          <label class="opcion-filtro">
+            <input type="checkbox" name="Categoria" value="polos" /> Casacas
+          </label>
+          <label class="opcion-filtro">
+            <input type="checkbox" name="Categoria" value="polos" /> Short
+          </label>
+          <label class="opcion-filtro">
+            <input type="checkbox" name="Categoria" value="polos" />Conjuntos
+          </label>
+        </div>
+        <div class="grupo-filtro">
+          <h4>Talla</h4>
+          <label class="opcion-filtro">
+            <input type="checkbox" name="talla" value="2-4" /> 2 - 4 años
+          </label>
+          <label class="opcion-filtro">
+            <input type="checkbox" name="talla" value="4-6" /> 4 - 6 años
+          </label>
+          <label class="opcion-filtro">
+            <input type="checkbox" name="talla" value="6-8" /> 6 - 8 años
+          </label>
+          <label class="opcion-filtro">
+            <input type="checkbox" name="talla" value="8-10" /> 8 - 10 años
+          </label>
+          <label class="opcion-filtro">
+            <input type="checkbox" name="talla" value="10-12" /> 10 - 12 años
+          </label>
+          <label class="opcion-filtro">
+            <input type="checkbox" name="talla" value="12-14" /> 12 - 14 años
+          </label>
+        </div>
+         <div class="grupo-filtro">
+          <h4>Color</h4>
+          <div class="colores-grid">
+            <button class="color-circulo" style="background-color: #8366eb;" title="Gris Oscuro"></button>
+            <button class="color-circulo" style="background-color: #4f89ee;" title="Gris Medio"></button>
+            <button class="color-circulo" style="background-color: #ee60ee;" title="Gris Claro"></button>
+            <button class="color-circulo" style="background-color: #15284e;" title="Gris Muy Claro"></button>
+            <button class="color-circulo" style="background-color: #255233; border: 1px solid #d1d5db;" title="Blanco"></button>
+          </div>
+        </div>
+
+        <div class="grupo-filtro">
+          <h4>Precio</h4>
+          <div class="precio-rango">
+            <input type="range" min="20" max="150" value="85" class="precio-slider">
+              <div class="precio-valores">
+                <span>S/ 20</span>
+                <span>S/ 150</span>
+              </div>
+          </div>
+        </div>
+
+
+
+
       </aside>
       <main class="contenido-principal">
         <section class="banner-hero">
           <div class="banner-texto">
             <span class="categoria-tag">NIÑOS</span>
             <h1>Ropa cómoda para los más pequeños</h1>
-            <p>Prendas resistentes, modernas y cómodas para cada momento del día.</p>
+            <p>
+              Prendas resistentes, modernas y cómodas para cada momento del día.
+            </p>
           </div>
           <div class="banner-imagen">
             <img src="img/niña1.webp" alt="banner-ninos" />

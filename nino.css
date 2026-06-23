@@ -137,11 +137,55 @@ body{
 
 .sidebar-filtros h3{
 
-    font-size: 10px;
+    font-size: 22px;
     color: #ffffff;
     margin-bottom: 25px;
     border-bottom: 2px solid #7c3aed;
     padding-bottom: 10px;
 }
+
+.grupo-filtro{
+
+    margin-bottom: 30px;
+}
+
+.grupo-filtro h4{
+    color:#ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    
+}
+.opcion-filtro {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #ffffff;
+  user-select: none;
+}
+.opcion-filtro input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #7c3aed; 
+}
+.colores-grid {
+  display: flex;
+  gap: 12px;
+}
+.color-circulo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 
 

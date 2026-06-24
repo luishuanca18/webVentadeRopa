@@ -137,7 +137,7 @@ body{
 .sidebar-filtros h3{
 
     font-size: 22px;
-    color: #ffffff;
+    color: #111111;
     margin-bottom: 25px;
     border-bottom: 2px solid #7c3aed;
     padding-bottom: 10px;
@@ -149,7 +149,7 @@ body{
 }
 
 .grupo-filtro h4{
-    color:#ffffff;
+    color: #111111;
     font-size: 15px;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -164,7 +164,7 @@ body{
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 15px;
-  color: #ffffff;
+  color: #444444;
   user-select: none;
 }
 .opcion-filtro input[type="checkbox"] {
@@ -195,7 +195,7 @@ body{
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  color: #ffffff;
+  color: #555555;
 }
 
 .productos-seccion {
@@ -448,4 +448,5 @@ body{
   text-align: center;
   font-size: 13px;
   color: #ffffff;
+  
 }

@@ -132,6 +132,7 @@ body{
     color: #111111;
     padding: 40px 25px;
     box-shadow: none;
+    
 }
 
 .sidebar-filtros h3{
@@ -187,7 +188,7 @@ body{
 }
 .precio-slider {
   width: 100%;
-  accent-color: #7c3aed; /* Colorea el slider de color violeta */
+  accent-color: #7c3aed; 
   cursor: pointer;
   margin-bottom: 8px;
 }
@@ -364,7 +365,7 @@ body{
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1.5fr; 
   gap: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 .footer-logo {
   max-width:200px;

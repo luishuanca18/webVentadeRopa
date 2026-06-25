@@ -1,0 +1,272 @@
+
+
+
+
+.nosotros-seccion {
+  background-color: #f5f5f5;
+  padding: 60px 80px;
+}
+
+.nosotros-titulo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.nosotros-titulo h1 {
+  font-size: 38px;
+  color: #111111;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.nosotros-titulo p {
+  font-size: 17px;
+  color: #666666;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.nosotros-historia {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  max-width: 1200px;
+  margin: 0 auto 50px;
+}
+
+.historia-imagen {
+  flex: 1;
+  height: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.historia-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.historia-texto {
+  flex: 1.2;
+}
+
+.historia-texto h2 {
+  font-size: 28px;
+  color: #111111;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.historia-texto p {
+  font-size: 16px;
+  color: #444444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.valores-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.valores-contenedor h2 {
+  font-size: 28px;
+  color: #111111;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.valor-card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(124, 58, 237, 0.1);
+}
+
+.valor-icono {
+  background-color: #f3e8ff;
+  color: #7c3aed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  font-size: 24px;
+}
+
+.valor-card h3 {
+  font-size: 18px;
+  color: #111111;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.valor-card p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.footer-ninos {
+  background-color: #111111;    
+  color: #ffffff;
+  padding: 60px 40px 20px;
+  border-top: 1px solid #ffffff;
+  margin-top: 50px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr; 
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.marca-descripcion {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer-sociales {
+  display: flex;
+  gap: 12px;
+}
+
+.social-circle {
+  background-color: #ffffff;
+  color: #333333;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;           
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.social-circle:hover {
+  background-color: #7c3aed;    
+  color: #ffffff;
+  transform: translateY(-3px);  
+}
+
+.footer-columna h3 {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-columna ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-columna ul li {
+  margin-bottom: 12px;
+}
+
+.footer-columna ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-columna ul li a:hover {
+  color: #7c3aed;
+}
+
+.contacto-lista li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.contacto-lista li i {
+  color: #7c3aed;               
+  font-size: 16px;
+}
+
+.footer-derechos {
+  border-top: 1px solid #ffffff;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .nosotros-seccion {
+    padding: 40px 20px;
+  }
+  
+  .nosotros-historia {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .historia-imagen {
+    width: 100%;
+    height: 250px;
+  }
+
+  .valores-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-ninos {
+    padding: 40px 20px 20px;
+    text-align: center;
+  }
+
+  .footer-sociales {
+    justify-content: center;
+  }
+
+  .contacto-lista li {
+    justify-content: center;
+  }
+}

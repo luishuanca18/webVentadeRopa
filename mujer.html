@@ -11,9 +11,12 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="mujerdiseño.css" />
   <link rel="stylesheet" href="style.css" />
+  
 </head>
 
 <body>
+  <input type="checkbox" id="checkbox" checked />
+
   <header class="encabezado">
     <label for="checkbox" class="toggle">
       <div class="bars" id="bar1"></div>
@@ -22,17 +25,17 @@
     </label>
 
     <div class="logo">
-      <img src="img/logo.png" alt="TECHFASHION">
+      <img src="img/logo.png" alt="TECHFASHION" />
       <!--   <h1>TECHFASHION</h1>
         <p>moda unisex para todos</p> -->
     </div>
 
     <nav class="menu">
       <a href="index.html">Inicio</a>
-      <a href="#">Productos</a>
-      <a href="#">Catalogo</a>
-      <a href="#">Nosotros</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="#">productos</a>
+      <a href="#">catalogo</a>
+      <a href="#">nosotros</a>
+      <a href="contacto.html">contacto</a>
     </nav>
     <div class="iconos">
       <i class="bi bi-bag"></i>
@@ -82,8 +85,8 @@
     </div>
     <div class="input-group">
       <div class="input-group-text" id="btnGroupAddon2">Buscador</div>
-      <input type="text" class="form-control" placeholder="Tu prenda favorita"
-        aria-label="Tu prenda favorita" aria-describedby="btnGroupAddon2">
+      <input type="text" class="form-control" placeholder="Tu prenda favorita" aria-label="Tu prenda favorita"
+        aria-describedby="btnGroupAddon2">
     </div>
   </div>
 
@@ -187,38 +190,51 @@
     </div>
   </section>
   <br>
+  <footer class="footer-ninos">
+    <div class="footer-grid">
 
-  <footer class="footer">
-    <div class="footer-contenido">
-      <div class="footer-marca">
-        <h2>TECHFASHION</h2>
-        <p>Moda unisex para todos los estilos.</p>
-      </div>
-
-      <div class="footer-links">
-        <h3>Navegación</h3>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Catálogo</a>
-        <a href="#">Nosotros</a>
-      </div>
-
-      <div class="footer-redes">
-        <h3>Síguenos</h3>
-
-        <div class="redes-iconos">
-          <i class="bi bi-instagram"></i>
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-tiktok"></i>
-          <i class="bi bi-whatsapp"></i>
+      <div class="footer-columna-marca">
+        <img src="img/logo.png" alt="TECHFASHION" class="footer-logo">
+        <p class="marca-descripcion">Moda unisex para todos los estilos. Calidad, comodidad y tendencia.</p>
+        <div class="footer-sociales">
+          <a href="#" class="social-circle"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-circle"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-circle"><i class="bi bi-tiktok"></i></a>
+          <a href="#" class="social-circle"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
-    </div>
 
-    <div class="footer-copy">
+      <div class="footer-columna">
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="#">Hombre</a></li>
+          <li><a href="mujer.html">Mujer</a></li>
+          <li><a href="nino.html">Niños</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-columna">
+        <h3>Información</h3>
+        <ul>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Política de cambios</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-columna">
+        <h3>Contacto</h3>
+        <ul class="contacto-lista">
+          <li><i class="bi bi-telephone-fill"></i> +51 900 123 456</li>
+          <li><i class="bi bi-envelope-fill"></i> hola@techfashion.com</li>
+          <li><i class="bi bi-geo-alt-fill"></i> Lima, Perú</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-derechos">
       <p>© 2026 TECHFASHION. Todos los derechos reservados.</p>
     </div>
-
   </footer>
 </body>
 

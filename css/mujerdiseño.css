@@ -31,29 +31,36 @@ body {
 }
 
 .card{
-    width: 290px;
-    background: #fff;
-    border: 1px solid #5B21B6;
-    border-radius: 12px;
-    overflow: hidden;
+  align-items: center;
+  text-align: center;
+  width: 290px;
+  background: #fff;
+  border: 1px solid #5B21B6;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .card img{
   width: 290px;
   display: block;
+  transition:transform 0.4s ease;
+}
+
+.card:hover img{
+    transform: scale(1.08);
 }
 
 .card_body{
-    padding: .9rem;
+  padding: .9rem;
 }
 
 .tag{
-    font-size: 0.75rem;
-    font-weight: bold;
-    color:#5B21B6;
-    background-color: #d9f2ee;
-    padding: .15rem .5rem;
-    border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color:#5B21B6;
+  background-color: #d9f2ee;
+  padding: .15rem .5rem;
+  border-radius: 999px;
 }
 
 .precio{
@@ -79,7 +86,7 @@ body {
 .btn:hover{
     background: #5B21B6;
     color: #fff;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .footer-ninos {

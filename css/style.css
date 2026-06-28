@@ -239,13 +239,16 @@ body {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
 .productos {
+  align-items: center;
+  text-align: center;
   background-color: #ffffff;
   padding: 70px 90px;
 }
 .contenedor-productos {
-  display: grid;
+  display: flex;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20rem;
 }
 
 .imagen-producto {
@@ -260,6 +263,7 @@ body {
   width: 150px;
 }
 .tarjeta-producto {
+  justify-content: center;
   background-color: var(--color-blanco);
   border-radius: 16px;
   overflow: hidden;
